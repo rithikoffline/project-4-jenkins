@@ -4,14 +4,14 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout code from Git (Replace with your actual Git URL)
-                git url: 'https://github.com/Zahidpichen1/project_2_devops.git'
+                git url: 'https://github.com/rithikoffline/project-4-jenkins.git'
             }
         }
         stage('Setup Environment') {
             steps {
                 echo "Creating virtual environment..."
                 // Replace with the correct Python executable path
-                bat 'C:\\Users\\zahid\\AppData\\Local\\Programs\\Python\\Python312\\python.exe -m venv venv'
+                bat 'C:\\Users\\Rithik\\AppData\\Local\\Programs\\Python\\Python312\\python.exe -m venv venv'
                 
                 echo "Activating virtual environment..."
                 bat 'call venv\\Scripts\\activate.bat'
